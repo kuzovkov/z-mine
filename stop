@@ -1,0 +1,6 @@
+#!/bin/sh
+
+while [ `ps -A | grep 'nheqminer' | wc -l` != 0 ]
+do
+        killall nheqminer
+done

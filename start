@@ -1,0 +1,8 @@
+#!/bin/sh
+
+if [ `ps -A | grep 'nheqminer' | wc -l` = 0 ]; then
+	echo 'startup nheqminer'
+	./nheqminer.sh&
+else
+	echo 'nheqminer already run'
+fi
